@@ -1,2 +1,2 @@
-# ( ﾟ∀ﾟ)ノ bujijam \(°∀ﾟ)
+# ( ﾟ∀ﾟ)ノ bujijam \_(•̀ω•́ 」∠)\_
 sleepy bujijam(-ρ-)
