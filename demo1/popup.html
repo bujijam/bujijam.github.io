@@ -27,10 +27,13 @@
             popBackgroundArea = document.querySelector('.popBackground');
 
             openBtn.onclick = () =>{
+                popBackgroundArea.style.opacity = 1
                 popBackgroundArea.classList.toggle('showing')
             }
             closeBtn.onclick = () =>{
-                popBackgroundArea.classList.toggle('showing')
+                popBackgroundArea.style.opacity = 0
+                // 等待动画执行完后再移除类名(隐藏`.popBackground`)
+                setTimeout("popBackgroundArea.classList.toggle('showing')", 200)
             }
 
         </script>
