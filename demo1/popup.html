@@ -1,0 +1,38 @@
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css弹窗演示 | bujijam.ga</title>
+        <link id="style-link" rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <button id="clickme">点我!</button>
+        <!--以下为弹窗-->
+        <div class="popBackground">
+            <div class="modal">
+                <header>
+                    <h1>谢谢你点我o.<</h1><div id="close">&times;</div>
+                </header>
+                </br>
+                <i style="opacity: 0.5;">每一个现在，都是以后的记忆。</i>
+                <p>hi~</p>
+                <p>这是一个ccs弹窗演示。</p>
+                <p>作者：<a target="_blank" href="https://bujijam.ga/" title="我的主页">bujijam</a>，原文：<a target="_blank" href="https://blog.bujijam.ga/" title="我的博客">https://blog.bujijam.ga/</a></p>
+            </div>
+        </div>
+        <script>
+            const settingBox = document.querySelector('.modal'),
+            openBtn = document.querySelector('#clickme'),
+            closeBtn = document.querySelector('#close'),
+            popBackgroundArea = document.querySelector('.popBackground');
+
+            openBtn.onclick = () =>{
+                popBackgroundArea.classList.toggle('showing')
+            }
+            closeBtn.onclick = () =>{
+                popBackgroundArea.classList.toggle('showing')
+            }
+
+        </script>
+    </body>
+</html>
