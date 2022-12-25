@@ -1,3 +1,3 @@
-# bujijam.github.io
+# bujijam.ga
 
--_-
+\>.o
