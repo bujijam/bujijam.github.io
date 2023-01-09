@@ -13,19 +13,15 @@
 
 [gglu聊天室](https://chat.bujijam.ga/)是一个简单轻型的聊天网站。
 
-<details>
-  <summary>目录</summary>
+- [介绍](https://bujijam.ga/docs/help-for-gglu#%E4%BB%8B%E7%BB%8D)
 
-  - [介绍](https://bujijam.ga/docs/help-for-gglu#%E4%BB%8B%E7%BB%8D)
+- [登录](https://bujijam.ga/docs/help-for-gglu#%E7%99%BB%E5%BD%95)
 
-  - [登录](https://bujijam.ga/docs/help-for-gglu#%E7%99%BB%E5%BD%95)
+- [创建聊天室](https://bujijam.ga/docs/help-for-gglu#%E5%88%9B%E5%BB%BA%E8%81%8A%E5%A4%A9%E5%AE%A4)
 
-  - [创建聊天室](https://bujijam.ga/docs/help-for-gglu#%E5%88%9B%E5%BB%BA%E8%81%8A%E5%A4%A9%E5%AE%A4)
+- [聊天命令](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%91%BD%E4%BB%A4)
 
-  - [聊天命令](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%91%BD%E4%BB%A4)
-
-  - [聊天室守则](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%AE%A4%E5%AE%88%E5%88%99)
-</details>
+- [聊天室守则](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%AE%A4%E5%AE%88%E5%88%99)
 
 ## 介绍
 
