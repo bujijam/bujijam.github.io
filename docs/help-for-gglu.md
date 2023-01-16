@@ -23,6 +23,8 @@
 
 - [聊天室守则](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%AE%A4%E5%AE%88%E5%88%99)
 
+- [FAQ](#FAQ)
+
 ## 介绍
 
 gglu聊天室主要由Flask-SocketIO实现。支持markdown。
@@ -57,7 +59,7 @@ gglu聊天室主要由Flask-SocketIO实现。支持markdown。
 
 ## 聊天室守则
 
-文明聊天。
+总则：不要搞事，文明聊天。
 
 ## FAQ
 
