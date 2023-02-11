@@ -1,4 +1,7 @@
-<title>演示网页 | bujijam.ga</title>
+<head>
+    <title>演示网页 | bujijam.ga</title>
+</head>
+
 
 # 演示网页
 
