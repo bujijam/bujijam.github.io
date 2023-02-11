@@ -19,11 +19,11 @@
 
 - [创建聊天室](https://bujijam.ga/docs/help-for-gglu#%E5%88%9B%E5%BB%BA%E8%81%8A%E5%A4%A9%E5%AE%A4)
 
-- [聊天命令](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%91%BD%E4%BB%A4)
+- [使用方法](https://bujijam.ga/docs/help-for-gglu#使用方法)
 
 - [聊天室守则](https://bujijam.ga/docs/help-for-gglu#%E8%81%8A%E5%A4%A9%E5%AE%A4%E5%AE%88%E5%88%99)
 
-- [FAQ](#FAQ)
+- [FAQ](https://bujijam.ga/docs/help-for-gglu#faq)
 
 ## 介绍
 
@@ -44,7 +44,15 @@ gglu聊天室主要由Flask-SocketIO实现。支持markdown。
 
 当`room`后没有参数时，您将进入一个随机房间。
 
-## 聊天命令
+## 使用方法
+
+### 基本
+
+在下方的输入框内输入并按`enter`键发送你的信息，`shift+enter`为换行。
+
+点击右上角的`≡`按钮打开侧边栏。点击在线列表中的某一用户来向ta发送邀请。
+
+### 聊天命令
 
 |命令格式|说明|等级|
 |--------|----|----|
@@ -71,4 +79,4 @@ A：该在线列表会在连接到聊天室后显示，多次出现代表着客�
 
 ### Q：为什么有些人的名字旁边有星星？
 
-A：名字旁带星星的用户为网站管理员或者站长。
+A：名字旁带星星的用户为全站管理员或者站长。
