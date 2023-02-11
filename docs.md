@@ -1,11 +1,3 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文档库 | bujijam.ga</title>
-</head>
-<body style="max-width: 50em;margin: auto;">
-    <h1>文档库</h1>
-    <p>还没写，懒</p>
-</body>
+# 文档库
 
-# test
+还没写，懒
