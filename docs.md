@@ -1,3 +1,3 @@
 # 文档库
 
-还没写，懒
+[gglu聊天室帮助文档](https://bujijam.ga/docs/help-for-gglu)
