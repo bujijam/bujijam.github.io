@@ -26,15 +26,12 @@
     <div class="card"></div>
 
     <script>
-      const card = document.querySelector('.card');
-
-      card.addEventListener('mousemove', (event) => {
-        const x = event.offsetX;
-        const y = event.offsetY;
-
-        card.style.boxShadow = `${x}px ${y}px 10px rgba(0, 0, 0, 0.3)`;
+      let card = document.querySelector('.card');
+      card.addEventListener('mousemove', (e) => {
+        let x = (e.clientX - e.target.offsetLeft - card.offsetWidth / 2) / 10;
+        let y = (e.clientY - e.target.offsetTop - card.offsetHeight / 2) / 10;
+        card.style.boxShadow = `${x}px ${y}px 5px grey`;
       });
-
       card.addEventListener('mouseleave', () => {
         card.style.boxShadow = 'none';
       });
