@@ -38,8 +38,8 @@
     <script>
       let card = document.querySelector('.card');
       card.addEventListener('mousemove', (e) => {
-        let x = (e.clientX - e.target.offsetLeft - card.offsetWidth / 2) / 10;
-        let y = (e.clientY - e.target.offsetTop - card.offsetHeight / 2) / 10;
+        let x = (e.clientX - e.target.offsetLeft - card.offsetWidth / 2) / 15;
+        let y = (e.clientY - e.target.offsetTop - card.offsetHeight / 2) / 15;
         card.style.boxShadow = `${x}px ${y}px 5px grey`;
       });
       card.addEventListener('mouseleave', () => {
