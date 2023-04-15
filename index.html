@@ -9,6 +9,7 @@
       height: 100%;
       }
       body {
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,6 +25,7 @@
         margin: 1em;
         border-radius: 1em 1em 1em 1em;
         padding: 1em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
       }
       .card:hover {
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +42,7 @@
       card.addEventListener('mousemove', (e) => {
         let x = (e.clientX - e.target.offsetLeft - card.offsetWidth / 2) / 20;
         let y = (e.clientY - e.target.offsetTop - card.offsetHeight / 2) / 20;
-        card.style.boxShadow = `${x}px ${y}px 5px gainsboro`;
+        card.style.boxShadow = `${x}px ${y}px 5px #0000001a`;
       });
       card.addEventListener('mouseleave', () => {
         card.style.boxShadow = 'rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px';
