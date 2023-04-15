@@ -4,43 +4,40 @@
     <meta chatset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
     <title>bujijam的个人主页</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    <style>html {
+    <style>
+      html {
       height: 100%;
-      }
-      body {
-      color: #f5f5f5;
-      overflow-y: hidden;
-      max-width: 50em;
-      margin: auto;
-      height: 100%;
-      font-family: Consolas, 'Courier New', 'Microsoft YaHei', monospace;
-      background-image: linear-gradient(to top, #fbc8d4 0%, #9795f0 100%);
       }
       a {
         text-decoration: none;
       }
+      .card {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+      }
     </style>
   </head>
   <body>
-    <div align="center">
-      <h1>bujijam.ga</h1>
-      <hr/>
-      <p><a target="_blank" href="https://github.com/bujijam" title="github">github</a> | 
-        <a target="_blank" href="https://blog.bujijam.ga/" title="我的博客">blog</a> | 
-        <a target="_blank" href="https://chat.bujijam.ga/" title="我的聊天室">chat</a> | 
-        <a target="_blank" href="https://bujijam.ga/docs.html" title="文档库">docs</a> | 
-        <a target="_blank" href="https://bujijam.ga/demos.html" title="演示网页">demos</a> |
-        <a target="_blank" href="mailto://bujijam@qq.com/" title="邮箱">mail</a></p>
-    </div>
-    <div align="center">
-      <p>hi, bujijam在此</p>
-      <p>正在学习python, javascript</p>
-      <p>是菜鸡</p>
-      <p>喜欢玩<a target="_blank" href="https://manyland.com/">manyland</a>和minecraft</p>
-      <p>欢迎来<del>暴击菜鸡</del>和我交友:D</p>
-    </div>
+    <div class="card"></div>
+
+    <script>
+      const card = document.querySelector('.card');
+
+      card.addEventListener('mousemove', (event) => {
+        const x = event.offsetX;
+        const y = event.offsetY;
+
+        card.style.boxShadow = `${x}px ${y}px 10px rgba(0, 0, 0, 0.3)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.boxShadow = 'none';
+      });
+    </script>
   </body>
 </html>
