@@ -26,7 +26,7 @@
         padding: 1em;
       }
       .card:hover {
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
       }
     </style>
   </head>
@@ -43,7 +43,7 @@
         card.style.boxShadow = `${x}px ${y}px 5px grey`;
       });
       card.addEventListener('mouseleave', () => {
-        card.style.boxShadow = 'none';
+        card.style.boxShadow = 'rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px';
       });
     </script>
   </body>
