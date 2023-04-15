@@ -8,22 +8,32 @@
       html {
       height: 100%;
       }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       a {
         text-decoration: none;
       }
       .card {
-        width: 200px;
+        width: 20em;
         height: 200px;
-        background-color: lightblue;
+        background-color: aliceblue;
         transition: box-shadow 0.2s;
+        margin: 1em;
+        border-radius: 1em 1em 1em 1em;
+        padding: 1em;
       }
       .card:hover {
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
   <body>
-    <div class="card"></div>
+    <div class="card">
+      <h1>hi!</h1>
+    </div>
 
     <script>
       let card = document.querySelector('.card');
