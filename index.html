@@ -1,82 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta chatset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-    <meta name="keywords" content="bujijam, bujijam的个人主页, bujijam.us.kg">
-    <meta name="description" content="bujijam的个人主页">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
-    <link rel="icon" href="https://s1.ax1x.com/2023/04/16/p998LGQ.png">
-    <title>bujijam的个人主页</title>
-    <style>
-      html {
-        height: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden
-      }
-      body {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Consolas, 'Courier New', 'Microsoft YaHei', monospace;
-        background: radial-gradient(circle at 22% 11%,rgb(57 143 112 / 20%),hsla(0,0%,100%,0) 35%),radial-gradient(circle at 82% 25%,rgb(35 114 177 / 18%),hsla(0,0%,100%,0) 50%),radial-gradient(circle at 25% 61%,rgb(216 122 112 / 28%),hsla(0,0%,100%,0) 71%);
-        overflow-y: hidden;
-        overflow-x: hidden
-      }
-      p {
-        margin: unset
-      }
-      a {
-        text-decoration: none;
-        color: #2f4f4f;
-        cursor: pointer;
-      }
-      .card {
-        width: 20em;
-        height: auto;
-        background-color: aliceblue;
-        transition: box-shadow 0.2s;
-        margin: 1em;
-        border-radius: 1em 1em 1em 1em;
-        padding: 1.5em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-      }
-      .card:hover {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-      }
-      img {
-        height: 8em;
-        border-radius: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <a class="hint--top  hint--rounded  hint--bounce" aria-label="Python & C++"><img src="https://s1.ax1x.com/2023/04/15/p9pov2F.png"></a><br/>
-      <p style="font-size: larger;">bujijam</p>
-      <i style="font-size: smaller;opacity: 0.3;">每一个现在，都是以后的记忆</i><br/>
-      <p><a target="_blank" href="https://github.com/bujijam" title="github"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" href="https://blog.bujijam.us.kg/" title="我的博客"><i class="fa-solid fa-scroll"></i></a>
-        <a target="_blank" href="https://chat.bujijam.us.kg/" title="我的聊天室"><i class="fa-solid fa-message"></i></a>
-        <a target="_blank" href="https://bujijam.us.kg/demos.html" title="演示网页"><i class="fa-solid fa-book"></i></a>
-        <a target="_blank" href="mailto://bujijam@163.com/" title="邮箱"><i class="fa-solid fa-envelope"></i></a></p>
-    </div>
 
-    <script>
-      let card = document.querySelector('.card');
-      card.addEventListener('mousemove', (e) => {
-        let x = (e.clientX - e.target.offsetLeft - card.offsetWidth / 2) / 20;
-        let y = (e.clientY - e.target.offsetTop - card.offsetHeight / 2) / 20;
-        card.style.boxShadow = `${x}px ${y}px 5px #0000001a`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.boxShadow = 'rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px';
-      });
-    </script>
-  </body>
+<head>
+	<meta chatset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="keywords" content="bujijam, bujijam的个人主页, bujijam.github.io">
+	<meta name="description" content="bujijam的个人主页">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+	<link rel="icon" href="https://s1.ax1x.com/2023/04/16/p998LGQ.png">
+	<title>bujijam的个人主页</title>
+	<style>
+		html {
+			height: 100%;
+			overflow-y: hidden;
+			overflow-x: hidden
+		}
+
+		body {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Consolas, 'Courier New', 'Microsoft YaHei', monospace;
+			background: radial-gradient(circle at 22% 11%, rgb(57 143 112 / 20%), hsla(0, 0%, 100%, 0) 35%), radial-gradient(circle at 82% 25%, rgb(35 114 177 / 18%), hsla(0, 0%, 100%, 0) 50%), radial-gradient(circle at 25% 61%, rgb(216 122 112 / 28%), hsla(0, 0%, 100%, 0) 71%);
+			overflow-y: hidden;
+			overflow-x: hidden
+		}
+
+		p {
+			margin: unset
+		}
+
+		a {
+			text-decoration: none;
+			color: #2f4f4f;
+			cursor: pointer;
+		}
+
+		.card {
+			width: 20em;
+			height: auto;
+			background-color: aliceblue;
+			transition: box-shadow 0.2s;
+			margin: 1em;
+			border-radius: 1em 1em 1em 1em;
+			padding: 1.5em;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		}
+
+		.card:hover {
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		}
+
+		img {
+			height: 8em;
+			border-radius: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="card">
+		<a class="hint--top  hint--rounded  hint--bounce" aria-label="Python & C++"><img
+				src="https://s1.ax1x.com/2023/04/15/p9pov2F.png"></a><br />
+		<p style="font-size: larger;">bujijam</p>
+		<i style="font-size: smaller;opacity: 0.3;">每一个现在，都是以后的记忆</i><br />
+		<p><a target="_blank" href="https://github.com/bujijam" title="github"><i class="fa-brands fa-github"></i></a>
+			<a target="_blank" href="https://bujijam.github.io/blog" title="我的博客"><i class="fa-solid fa-scroll"></i></a>
+			<a target="_blank" href="https://gglu.onrender.com/" title="我的聊天室"><i class="fa-solid fa-message"></i></a>
+			<a target="_blank" href="https://bujijam.github.io/demos.html" title="演示网页"><i
+					class="fa-solid fa-book"></i></a>
+			<a target="_blank" href="mailto://bujijam@qq.com/" title="邮箱"><i class="fa-solid fa-envelope"></i></a>
+		</p>
+	</div>
+
+	<script>
+		let card = document.querySelector('.card');
+		card.addEventListener('mousemove', (e) => {
+			let x = (e.clientX - e.target.offsetLeft - card.offsetWidth / 2) / 20;
+			let y = (e.clientY - e.target.offsetTop - card.offsetHeight / 2) / 20;
+			card.style.boxShadow = `${x}px ${y}px 5px #0000001a`;
+		});
+		card.addEventListener('mouseleave', () => {
+			card.style.boxShadow = 'rgba(50, 50, 93, 0.25) 0px 3px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px';
+		});
+	</script>
+</body>
+
 </html>
