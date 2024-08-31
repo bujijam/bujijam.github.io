@@ -24,7 +24,6 @@ body {
     margin-top: 1em;
     margin-bottom: 0.5em;
     color: rgb(105, 142, 173);
-    border-bottom: 0px;
 }
 
 #nav {
@@ -36,8 +35,14 @@ h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #b4cfd7;
 }
 
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 p {
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
     word-break: break-all;
 }
 
@@ -62,6 +67,16 @@ a {
     padding-right: 1em;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/* footer中的所有p */
+footer p {
+    font-size: small;
+    margin: 0em;
 }
 
 /* .card:hover {
