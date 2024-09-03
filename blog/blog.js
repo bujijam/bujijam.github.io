@@ -1,3 +1,4 @@
+// 文章底部折叠按钮
 document.addEventListener('DOMContentLoaded', function () {
     var detailsElements = document.querySelectorAll('.blog-article');
     detailsElements.forEach(function (details) {
@@ -13,18 +14,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
+// markdown渲染
 document.addEventListener('DOMContentLoaded', function () {
-    var md = new remarkable.Remarkable();
-    var markdownElements = document.querySelectorAll('.markdown-content');
-
-    markdownElements.forEach(function (element, index) {
-        var markdownContent = element.innerHTML;
-        var htmlContent = md.render(markdownContent);
-
-        var renderedContainer = element.nextElementSibling;
-        if (renderedContainer && renderedContainer.classList.contains('rendered-content')) {
-            renderedContainer.innerHTML = htmlContent;
-        }
-    });
+    loadAndRenderMarkdown('./blog/test.md');
 });
+
+function loadAndRenderMarkdown(filePath) {
+    fetch(filePath)
+        .then(response => response.text())
+        .then(markdownContent => {
+            var md = new remarkable.Remarkable();
+            var htmlContent = md.render(markdownContent);
+            var articleContainer = document.querySelector('.blog-article .rendered-content');
+            if (articleContainer) {
+                articleContainer.innerHTML = htmlContent;
+                document.querySelectorAll('.markdown-content').forEach(element => {
+                    element.style.display = 'none'; // 隐藏原始的Markdown内容  
+                });
+            }
+        })
+        .catch(error => console.error('Error loading Markdown file:', error));
+}
