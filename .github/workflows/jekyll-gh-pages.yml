@@ -50,5 +50,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-# theme
+# use theme
 theme: jekyll-theme-minima
