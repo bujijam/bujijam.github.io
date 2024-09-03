@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+---
+title: My Blog
+---
+
+<article>
+    {% for post in site.my_posts %}
+    <summary>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <small>{{ post.date | date_to_string }}</small>
+        <img src="{{ post.index-img }}" alt="Blog Image">
+    </summary>
+    <div class="content" style="display: none;">
+        {{ post.content }}
+    </div>
+    <button
+        onclick="this.previousElementSibling.style.display='none'; this.nextElementSibling.style.display='block';">Read
+        More</button>
+    {% endfor %}
+</article>
+
+<script>
+    document.querySelectorAll('summary').forEach(function (summary) {
+        summary.onclick = function () {
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'block';
+            return false; // Prevent the default action of the <summary> tag  
+        };
+    });  
+</script>
+
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -73,4 +104,4 @@
 
 </body>
 <script src="./blog/blog.js"></script>
-</html>
+</html> -->
