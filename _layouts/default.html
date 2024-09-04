@@ -1,3 +1,8 @@
+---
+layout: default
+title: My Blog
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -8,10 +13,9 @@
     <meta name="description" content="bujijam的博客">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/dracula.min.css">
     <link rel="icon" href="https://s1.ax1x.com/2023/04/16/p998LGQ.png">
-    <link rel="stylesheet" href="./blog/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ '../assets/css/style.css' | relative_url }}">
     <script src="./blog/remarkable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <title>bujijam的博客</title>
@@ -23,43 +27,27 @@
         <a>首页</a> | <a>关于</a>
     </p>
     <div class="card">
+        {% for post in site.posts %}
+            <article>
+                <header>
+                    <h1 class="blog-title">{{ post.title }}</h1>
+                    <div class="excerpt_date">
+                        <p class="blog-excerpt">{{ post.excerpt }}</p>
+                        <p><small>{{ post.date | date_to_string }}</small></p>
+                    </div>
+                    <img class="index-img" src="{{ post.image }}" alt="图片">
+                </header>
 
-        <article>
-            <header>
-                <h1 class="blog-title">{{ page.title }}</h1>
-                <div class="excerpt_date">
-                    <p class="blog-excerpt">{{ page.excerpt }}</p>
-                    <p><small>{{ page.date | date_to_string }}</small></p>
-                </div>
-                <img class="index-img" src="{{ page.image }}" alt="图片">
-            </header>
-            <details class="blog-article">
-                <summary>阅读全文</summary>
-                {{ content }}
-                <button class="toggle-button">折叠</button>
-            </details>
-            <hr>
-        </article>
-
-        <article>
-            <header>
-                <h1 class="blog-title">这是标题</h1>
-                <div class="excerpt_date">
-                    <p class="blog-excerpt">这是摘要这是摘要这是摘要这是摘要这是摘要！</p>
-                    <p class="pub-date"><time datetime="2024-08-31">2024-08-31</time></p>
-                </div>
-                <img class="index-img">
-            </header>
-            <details class="blog-article">
-                <summary>阅读全文</summary>
-                <div class="markdown-content" style="display: none;"># hi</div>
-                <div class="rendered-content"></div>
-                <button class="toggle-button">折叠</button>
-            </details>
-            <hr>
-        </article>
-
-
+                <details class="blog-article">
+                    <summary>阅读全文</summary>
+                    <div class="content">
+                        {{ post.content }}
+                    </div>
+                    <button class="toggle-button">折叠</button>
+                </details>
+                <hr>
+            </article>
+        {% endfor %}
 
         <footer>
             <p>本博客所有文章除特别声明外，均采用 CC BY-SA 4.0 协议 ，转载请注明出处！</p>
@@ -69,6 +57,21 @@
     </div>
 
 </body>
-<script src="./blog/blog.js"></script>
+<script>
+    // 文章底部折叠按钮
+        document.addEventListener('DOMContentLoaded', function () {
+            var detailsElements = document.querySelectorAll('.blog-article');
+            detailsElements.forEach(function (details) {
+                // 在每个details元素内部查找.toggle-button  
+                var button = details.querySelector('.toggle-button');
+                if (button) {
+                    button.addEventListener('click', function (event) {
+                        // 切换details的open属性  
+                        details.open = !details.open;
+                    });
+                }
+            });
+        });
+</script>
 
 </html>
