@@ -1,6 +1,7 @@
 theme: minima
 title: bujijam title
 description: bujijam description
+source: _posts
 # collections:  
 #   posts:  
 #     output: true  
