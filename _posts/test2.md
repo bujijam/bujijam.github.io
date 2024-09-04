@@ -1,4 +1,4 @@
----  
+---
 title:  "Welcome to My Blog2!"  
 date:   2099-09-03 12:00:00 +0000  
 excerpt: "这是一个示例摘要，用于展示如何在 Markdown 文件中设置摘要。"  
