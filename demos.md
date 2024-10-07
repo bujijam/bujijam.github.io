@@ -1,8 +1,3 @@
-<head>
-    <title>演示网页 | bujijam.github.io</title>
-</head>
-
-
 # 演示网页
 
 [keycode(已注明原文)](https://bujijam.github.io/demos/0/hhh)
